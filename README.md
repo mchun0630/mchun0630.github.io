@@ -6,18 +6,18 @@
 	* [How to find a Ligand](#ligand)
 	* [How to find a Residue](#residue)
 	* [How to Mutate a Protein](#mutate)
-* [PDB2PQR TUTORIALS](#)
-	* [Introduction to PDB2PQR](#)
-	* [Downloading a PDB or PQR file for Offline APBS](#)
-* [APBS TUTORIALS](#)
-	* [Introduction to APBS](#)
-	* [How to run a protein through APBS (online)](#)
-	* [Setting up your computer for APBS](#)
-	* [How to run APBS from the command line](#)
-	* [Dime Value Problems](#)
-* [APBS and Visualization](#)
-	* [PyMol](#)
-	* [VMD](#)
+* [PDB2PQR TUTORIALS](#PDB2PQR)
+	* [Introduction to PDB2PQR](#IntroPDB)
+	* [Downloading a PDB or PQR file for Offline APBS](#Download)
+* [APBS TUTORIALS](#APBS)
+	* [Introduction to APBS](#IntroAPBS)
+	* [How to run a protein through APBS (online)](#OnlineAPBS)
+	* [Setting up your computer for APBS](#SetupAPBS)
+	* [How to run APBS from the command line](#CMDAPBS)
+	* [Dime Value Problems](#Dimes)
+* [APBS and Visualization](#APBSvis)
+	* [PyMol](#PyMol)
+	* [VMD](#VMD)
 * [Precursor Requirements](#)
 	* [Download VMD](#)
 	* [Download APBS](#)
@@ -25,11 +25,12 @@
 
 # Put in Internal LInks for the TOC
 
+
 <a name="vmd"></a>
 ## VMD
 
-### How to get a 3-D protein structure 
 <a name="3dprot"></a>
+### How to get a 3-D protein structure 
 
 1. Go to desired Protein Page [(pic)](http://oi60.tinypic.com/2zs8xti.jpg)
 
@@ -58,8 +59,9 @@ Click the "Load" button, and your saved protein will load in the VMD window as a
 
 <hr/>
 
-######How to find a Ligand
 <a name="ligand"></a>
+######How to find a Ligand
+
 First, your 3-D protein structure should be loaded
 
 on the VMD Main window, click 
@@ -77,8 +79,9 @@ Hit
 and the chosen ligand will appear
 
 <hr/>
-######How to find a Residue
 <a name="residue"></a>
+######How to find a Residue
+
 First, your 3-D protein structure should be loaded
 
 on the VMD Main window, click 
@@ -94,8 +97,9 @@ Under
 Hit ![](http://i62.tinypic.com/z1ogn.png)and the chosen residue will appear
 
 <hr/>
-######How to Mutate a Protein
 <a name="mutate"></a>
+######How to Mutate a Protein
+
 * First, one must take their pdb file (taken from pdb.org) and convert it into a psf file. This is done by hitting ![](http://i60.tinypic.com/2jb7969.png) in the VMD main window, then ![](http://i62.tinypic.com/fnv5g9.png), and finally ![](http://i61.tinypic.com/1zezbwl.png). You will this on your screen:
 
 ![](http://i58.tinypic.com/28iuh38.png)
@@ -136,11 +140,12 @@ Finally, click ![](http://i59.tinypic.com/11gu4ip.png)
 
 The mutated protein will now appear in your VMD window 
 
-
+<a name="PDB2PQR"></a>
 ##PDB2PQR
-<a name=""></a>
+
+<a name="IntroPDB"></a>
 ######Introduction to PDB2PQR
-<a name=""></a>
+
 [Use the online pdb2pqr website to run pdb2pqr](http://nbcr-222.ucsd.edu/pdb2pqr_1.9.0/) (changes file from pdb to the pqr format, this adds missing hydrogens, adds some missing heavy atoms, and optimizes the protein structure among other things)
 
 First, go to the PDB2PQR website above. You should already have a selected protein form pdb.org in mind.
@@ -156,8 +161,9 @@ Since I want my file to be compatible with VMD, for the both settings named "Pic
 An interesting thing to keep in mind whilst using pdb2pqr:
 ![](http://i60.tinypic.com/1zn0gm8.jpg)
 
+<a name="Download"></a>
 ######Downloading a PDB or PQR file for Offline APBS 
-<a name=""></a>
+
 1. After running PDB2PQR from the website, click on the file under "Input Files" labeled something like "14084693082.pdb" (the number will be different but it will have a .pdb ending). This should start a download   
 ![](http://i58.tinypic.com/30m65gk.jpg)  
 **\*(It is useful to rename the file to 1FAS.pdb because it gets confusing when you have many different strings of numbers for different proteins)**
@@ -169,15 +175,17 @@ An interesting thing to keep in mind whilst using pdb2pqr:
 3. Now you should download the same numbered file under "Output files" (mine is called 1408469302.pqr). This time you cannot click on it (as it will just bring up the a webpage with all the information in the file. You must right click and "Save link as..." this time. Also make sure the downloaded file ends in a .pqr but once again the number will not be the same as the one in this picture.  
 ![](http://i59.tinypic.com/uosr9.jpg)
 
+<a name="APBS"></a>
 ##APBS
-<a name=""></a>
+
+<a name="IntroAPBS"></a>
 ######Introduction to APBS
-<a name=""></a>
+
 APBS is a useful tool to find the electrostatic field of a protein. Certain components need to be in place for APBS to work including _white spaces must be in place_  
 
-
+<a name="OnlineAPBS"></a>
 ######How to run a protein through APBS (online)
-<a name=""></a>
+
 The steps follow the same steps in making a PDB2PQR protein model structure, except for a small difference. 
 
 When making the PDB2PQR, check the option for allowing the program to have an APBS option, and in addition adding the insert white space link in the options, like so: 
@@ -187,9 +195,9 @@ Then download the .dx.gz file, and that is the end of your APBS session.
 
 * Note: Unzipping the .dx.gz file can be done using any unzipping program 
 
-
+<a name="SetupAPBS"></a>
 ######Setting up your computer for APBS
-<a name=""></a>
+
 *DISCLAIMER: THIS IS FOR WINDOWS USERS ONLY (?)
 
 In order to run APBS using command line, you will need to first download the APBS binary from http://sourceforge.net/projects/apbs/ as well as download the newest python version 2 release (https://www.python.org/download/releases/2.7.2/  as of 8/8/2014). 
@@ -220,8 +228,9 @@ TO make the directory, simply copy and paste C:\Python27\;C:\Python27\Scripts;C:
 and click ok. 
 You can now run APBS!
 
+<a name="CMDAPBS"></a>
 ######How to run APBS from the command line
-<a name=""></a>
+
 ####DISCALIMER: THIS TUTORIAL IS USING A WINDOWS COMPUTER AND WINDOWS COMMAND PROMPT
 
 First, before running APBS through the command line, you must make sure your desired protein files are in the same folder as the apbs command prompt. If APBS downloaded correctly, it should be in your C drive (![](http://i57.tinypic.com/k2ih3r.png)) when you open "computer" from your start menu. 
@@ -260,10 +269,12 @@ Once you find your IN file, hit enter and APBS will run its calculations and sav
 
 You are done running APBS!
 
+<a name="APBSvis"></a>
 ##APBS and Visualization
-<a name=""></a>
+
+<a name="PyMol"></a>
 ######PyMol
-<a name=""></a>
+
 [The needed protein for the PyMol tutorial](http://www.rcsb.org/pdb/explore/explore.do?structureId=1fas) (1FAS a.k.a Fasciculin-1).  Fasciculin-1 is an acetylcholinesterase (this compound ends the communication between muscle cells) inhibitor found in the venom of the green mamba. This allows the action potential to go uncurbed which causes small involuntary muscle contractions (it paralyzes the injected subject).
 
 To set up the molecule follow the **"Introduction to PDB2PQR"** instructions above.
@@ -336,8 +347,9 @@ Using values of 5, this is the picture that appears (common isovalues are 1,5,10
 
 **you didn't properly delete/save the water molecules which causes small highly charged areas**  
 
+<a name="VMD"></a>
 ######VMD
-<a name=""></a>
+
 [The needed protein for this VMD tutorial](http://www.rcsb.org/pdb/explore/explore.do?pdbId=1MYK) (1MYK a.k.a Hyperstable Arc Repressor Mutant PL8). An arc repressor is a small protein that acts as a transcription factor. This is a mutant that has the Proline-8 (in location 8) replaced by a Leucine. This creates enhanced stability due to an extra hydrogen bond, but also decreases the affinity of the molecule to bind to DNA.
 
 In order to set up the molecule, follow the same instructions as **"Introduction to PDB2PQR"** but replace the shown molecule with 1MYK.
@@ -430,8 +442,9 @@ Change the "Color Scale Data Range:" values to -10 and 10 and hit set (do this f
 25. The final representation should now look like the following:  
 ![](http://i59.tinypic.com/vdh447.jpg)  
 
+<a name="Dimes"></a>
 ##DIME VALUE PROBLEMS
-<a name=""></a>
+
 When running APBS, DIME values may become a problem that keeps apbs electrostatic calculations from running. In order to check DIME values, you need to check the .in file for DIME values. One can change the DIME values of an APBS file by going through a text editor and manually changing the dime values. 
 
 ![](http://i58.tinypic.com/6eepsl.png) 
