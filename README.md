@@ -19,9 +19,12 @@
 	* [PyMol](#PyMol)
 	* [VMD](#VMD)
 * [Precursor Requirements](#)
-	* [Download VMD](#)
-	* [Download APBS](#)
-	* [Download PDB2PQR](#)
+	* [Download VMD](http://www.ks.uiuc.edu/Research/vmd/)
+	* [Download Pymol](http://www.pymol.org/)
+	* [Download APBS and PDB2PQR](http://www.poissonboltzmann.org/docs/downloads/)
+	* [Download Git](http://git-scm.com/)  
+	* [Download Python](https://www.python.org/) (*Note that this is written using Python 2.7 )
+	* [Download Matplotlib](http://matplotlib.org/)
 
 # Put in Internal LInks for the TOC
 
@@ -34,27 +37,22 @@
 
 1. Go to desired Protein Page [(pic)](http://oi60.tinypic.com/2zs8xti.jpg)
 
-On the right hand corner, hit the "download files" option
+2. On the right hand corner, hit the "download files" option  
+![](http://i62.tinypic.com/2iu82u0.png)  
 
-![](http://i62.tinypic.com/2iu82u0.png)
-
-Now, select desired file type. For this tutorial, the PBD File (TEXT) was selected
-
-![](http://i58.tinypic.com/wl1zxh.png)
-
+3. Now, select desired file type. For this tutorial, the PBD File (TEXT) was selected  
+![](http://i58.tinypic.com/wl1zxh.png)  
 Once you click the file, download should start immediately. Save the file in desired location.
 
-Next, open up VMD
+4. Next, open up VMD  
 ![](http://i61.tinypic.com/20kzo5v.png)
 
-Click ![](http://i60.tinypic.com/24b7rev.png), then click "new molecule" A Molecule File Browser will pop up as such
-![](http://i60.tinypic.com/210eqhf.png)
+5. Click ![](http://i60.tinypic.com/24b7rev.png), then click "new molecule" A Molecule File Browser will pop up as such  
+![](http://i60.tinypic.com/210eqhf.png)  
 
-Click "Browse...", and then click and open saved Protein file
-
+6. Click "Browse...", and then click and open saved Protein file. 
 Go below to "Determine File Type", and click file type, which in this case, is PDB
 ![](http://i58.tinypic.com/2gsr90g.png)
-
 Click the "Load" button, and your saved protein will load in the VMD window as a 3-D protein structure
 
 <hr/>
@@ -62,19 +60,18 @@ Click the "Load" button, and your saved protein will load in the VMD window as a
 <a name="ligand"></a>
 ######How to find a Ligand
 
-First, your 3-D protein structure should be loaded
-
+1. First, your 3-D protein structure should be loaded
 on the VMD Main window, click 
 ![](http://i60.tinypic.com/ja9bmu.png), and then click 
 ![](http://i60.tinypic.com/nmzr4n.png)
 
-Next, the Graphical Representations Window will open  
+2. Next, the Graphical Representations Window will open  
 ![](http://i57.tinypic.com/2s1q9t5.png)
 
-Under 
+3. Under 
 ![](http://i59.tinypic.com/107uyol.png), delete the text "all" and enter "resname (insert name of desired compound here)"
 
-Hit 
+4. Hit 
 ![](http://i62.tinypic.com/z1ogn.png)
 and the chosen ligand will appear
 
@@ -82,62 +79,51 @@ and the chosen ligand will appear
 <a name="residue"></a>
 ######How to find a Residue
 
-First, your 3-D protein structure should be loaded
-
+1. First, your 3-D protein structure should be loaded
 on the VMD Main window, click 
 ![](http://i60.tinypic.com/ja9bmu.png), and then click 
 ![](http://i60.tinypic.com/nmzr4n.png)
 
-Next, the Graphical Representations Window will open  
+2. Next, the Graphical Representations Window will open  
 ![](http://i57.tinypic.com/2s1q9t5.png)
 
-Under 
-![](http://i59.tinypic.com/107uyol.png), delete the text "all" and enter "resid (insert residue number)" to find the desired residue number
+3. Under ![](http://i59.tinypic.com/107uyol.png), delete the text "all" and enter "resid (insert residue number)" to find the desired residue number
 
-Hit ![](http://i62.tinypic.com/z1ogn.png)and the chosen residue will appear
+4. Hit ![](http://i62.tinypic.com/z1ogn.png)and the chosen residue will appear
 
 <hr/>
 <a name="mutate"></a>
 ######How to Mutate a Protein
 
-* First, one must take their pdb file (taken from pdb.org) and convert it into a psf file. This is done by hitting ![](http://i60.tinypic.com/2jb7969.png) in the VMD main window, then ![](http://i62.tinypic.com/fnv5g9.png), and finally ![](http://i61.tinypic.com/1zezbwl.png). You will this on your screen:
-
+1.  First, one must take their pdb file (taken from pdb.org) and convert it into a psf file. This is done by hitting ![](http://i60.tinypic.com/2jb7969.png) in the VMD main window, then ![](http://i62.tinypic.com/fnv5g9.png), and finally ![](http://i61.tinypic.com/1zezbwl.png). You will this on your screen:  
 ![](http://i58.tinypic.com/28iuh38.png)
+\*For this example, we'll use the pdb protein 1JLB.
 
-For this example, we'll use the pdb protein 1JLB.
+2. Molecule simply names the molecule you want to make into a psf file. ![](http://i61.tinypic.com/2zeauqc.png) is the name of your soon-to-be psf file; change it if you wish. Then hit ![](http://i59.tinypic.com/w7eno9.png)  
 
-Molecule simply names the molecule you want to make into a psf file. ![](http://i61.tinypic.com/2zeauqc.png) is the name of your soon-to-be psf file; change it if you wish. Then hit ![](http://i59.tinypic.com/w7eno9.png)
+3. For the next section, keep automatic settings and hit ![](http://i58.tinypic.com/2dmf53n.png) 
 
-For the next section, keep automatic settings and hit ![](http://i58.tinypic.com/2dmf53n.png) 
+4. For the next section as well, keep automatic settings and hit ![](http://i62.tinypic.com/2pzcz0z.png)
 
-For the next section as well, keep automatic settings and hit ![](http://i62.tinypic.com/2pzcz0z.png)
+5. When ![](http://i59.tinypic.com/25jyq82.png) pops up, click "ok"
 
-When ![](http://i59.tinypic.com/25jyq82.png) pops up, click "ok"
-
-If, perhaps an error window pops up:  
+6. If, perhaps an error window pops up:  
 ![](http://i60.tinypic.com/xcpwew.png)  
-simply click ![](http://i61.tinypic.com/qsr512.png) and the error messages will clear. This may jeopardize the quality of the mutated protein, however. 
+simply click ![](http://i61.tinypic.com/qsr512.png) and the error messages will clear. However this may jeopardize the quality of the mutated protein. 
 
-Click ![](http://i61.tinypic.com/2433loy.png), and then you will have the psf file saved in your files. 
+7. Click ![](http://i61.tinypic.com/2433loy.png), and then you will have the psf file saved in your files. 
 
-* Now we can go on to really mutating our residue. Hit ![](http://i60.tinypic.com/2jb7969.png) in the VMD main window, then ![](http://i62.tinypic.com/fnv5g9.png), and finally![](http://i59.tinypic.com/wgyycl.png). Then, the following window will open:
+8. Now we can go on to really mutating our residue. Hit ![](http://i60.tinypic.com/2jb7969.png) in the VMD main window, then ![](http://i62.tinypic.com/fnv5g9.png), and finally![](http://i59.tinypic.com/wgyycl.png). Then, the following window will open:  
+![](http://i60.tinypic.com/v4ov9i.png)  
 
-![](http://i60.tinypic.com/v4ov9i.png)
+9. Upload the psf and pdb files of your protein. For the field marked MUTATED, retype the name you wish your mutated file to be called.  
+![](http://i62.tinypic.com/nx2r01.png) refers to the original residue your target residue was  
+![](http://i57.tinypic.com/j0emwk.png) is the residue number  
+![](http://i57.tinypic.com/24czm07.png) is the amino acid of your desired mutation.  
+An example of the procedure, is if you wanted to change a wild type HIV-1 Reverse Transcriptase Tyrosin to Cysteine, then ![](http://i62.tinypic.com/nx2r01.png) would be TYR, ![](http://i57.tinypic.com/j0emwk.png) would be 181, and ![](http://i57.tinypic.com/24czm07.png) would be CYS  
+You do not have to check the ![](http://i57.tinypic.com/2u9na7p.png) in order to mutate your residue.  
 
-Upload the psf and pdb files of your protein. For the field marked MUTATED, retype the name you wish your mutated file to be called. 
-
-![](http://i62.tinypic.com/nx2r01.png) refers to the original residue your target residue was
-
-![](http://i57.tinypic.com/j0emwk.png) is the residue number
-
-![](http://i57.tinypic.com/24czm07.png) is the amino acid of your desired mutation.
-
-An example of the procedure, is if you wanted to change a wild type HIV-1 Reverse Transcriptase Tyrosin to Cysteine, then ![](http://i62.tinypic.com/nx2r01.png) would be TYR, ![](http://i57.tinypic.com/j0emwk.png) would be 181, and ![](http://i57.tinypic.com/24czm07.png) would be CYS
-
-You do not have to check the ![](http://i57.tinypic.com/2u9na7p.png) in order to mutate your residue. 
-
-Finally, click ![](http://i59.tinypic.com/11gu4ip.png)
-
+10. Finally, click ![](http://i59.tinypic.com/11gu4ip.png)  
 The mutated protein will now appear in your VMD window 
 
 <a name="PDB2PQR"></a>
@@ -188,12 +174,14 @@ APBS is a useful tool to find the electrostatic field of a protein. Certain comp
 
 The steps follow the same steps in making a PDB2PQR protein model structure, except for a small difference. 
 
-When making the PDB2PQR, check the option for allowing the program to have an APBS option, and in addition adding the insert white space link in the options, like so: 
-![](http://i61.tinypic.com/117z95c.png)
-Then, click submit, and it will take you to the page for the PDB2PQR runned protein. On the bottom of the page, click ![](http://i61.tinypic.com/sdem35.jpg) and wait until APBS is done running.
-Then download the .dx.gz file, and that is the end of your APBS session.
+1. When making the PDB2PQR, check the option for allowing the program to have an APBS option, and in addition adding the insert white space link in the options, like so: 
+![](http://i61.tinypic.com/117z95c.png)  
 
-* Note: Unzipping the .dx.gz file can be done using any unzipping program 
+2. Then, click submit, and it will take you to the page for the PDB2PQR runned protein. On the bottom of the page, click ![](http://i61.tinypic.com/sdem35.jpg) and wait until APBS is done running.  
+
+3. Then download the .dx.gz file, and that is the end of your APBS session.
+
+\* Note: Unzipping the .dx.gz file can be done using any unzipping program 
 
 <a name="SetupAPBS"></a>
 ######Setting up your computer for APBS
@@ -204,28 +192,27 @@ In order to run APBS using command line, you will need to first download the APB
 
 Why use the command line? It gives the user much more power over executable functions, immediately unzips the file, and is quite simple to use. 
 
-First, in order to run APBS at all, you need to make a directory connecting APBS to the command line. 
-
+1. First, in order to run APBS at all, you need to make a directory connecting APBS to the command line. 
 To do so, go to the start menu, and right click on 'computer' The following should open:  
-![](http://i57.tinypic.com/qyy24i.png)
+![](http://i57.tinypic.com/qyy24i.png)  
 
-Click on properties, and the following should open: 
-![](http://i62.tinypic.com/raro1z.png)
+2. Click on properties, and the following should open:  
+![](http://i62.tinypic.com/raro1z.png)  
 
-Click on 'Advanced System Settings' ; the computer will ask you if you want to change settings. Click yes, and then the system properties window will open.
+3. Click on 'Advanced System Settings' ; the computer will ask you if you want to change settings. Click yes, and then the system properties window will open.  
+![](http://i61.tinypic.com/2ed7h8m.png)  
 
-![](http://i61.tinypic.com/2ed7h8m.png)
-
-Click 
+4. Click 
 ![](http://i62.tinypic.com/4k9nci.png), and another window will pop up.  
-![](http://i62.tinypic.com/i5bsdd.png) 
+![](http://i62.tinypic.com/i5bsdd.png)  
 
-This is where you'll write your path. Click on the 
-![](http://i62.tinypic.com/3167m0l.png) to create a new path. 
+5. This is where you'll write your path. Click on the 
+![](http://i62.tinypic.com/3167m0l.png) to create a new path.  
 
-TO make the directory, simply copy and paste C:\Python27\;C:\Python27\Scripts;C:\Util\pdb2pqr-windows-bin-1.9.0;C:\apbs\bin
-
+6. TO make the directory, simply copy and paste  
+**C:\Python27\;C:\Python27\Scripts;C:\Util\pdb2pqr-windows-bin-1.9.0;C:\apbs\bin**  
 and click ok. 
+
 You can now run APBS!
 
 <a name="CMDAPBS"></a>
@@ -233,38 +220,30 @@ You can now run APBS!
 
 ####DISCALIMER: THIS TUTORIAL IS USING A WINDOWS COMPUTER AND WINDOWS COMMAND PROMPT
 
-First, before running APBS through the command line, you must make sure your desired protein files are in the same folder as the apbs command prompt. If APBS downloaded correctly, it should be in your C drive (![](http://i57.tinypic.com/k2ih3r.png)) when you open "computer" from your start menu. 
+1. First, before running APBS through the command line, you must make sure your desired protein files are in the same folder as the apbs command prompt. If APBS downloaded correctly, it should be in your C drive (![](http://i57.tinypic.com/k2ih3r.png)) when you open "computer" from your start menu. 
 
-Click on the APBS folder, and in the APBS folder make a new folder for all your proteins; please label the folder accordingly, and remember the name of the folder. 
+2. Click on the APBS folder, and in the APBS folder make a new folder for all your proteins; please label the folder accordingly, and remember the name of the folder. 
 
-It is important to remember, that when putting protein files in the folder, you need to put both the PQR as well as the corresponding IN file. PQR and IN files can both be obtained from the PDB2PQR webserver. 
-
-A PQR file is the information about the protein, whereas the IN file is a command file that tells APBS how to calculate the electrostatic fields. The In file is unique to one PQR file (as it specifies its commands to only one PQR file) and also holds other information such as dimensions and calculation specifications. Both files are needed to run APBS.
-
+3. It is important to remember, that when putting protein files in the folder, you need to put both the PQR as well as the corresponding IN file. PQR and IN files can both be obtained from the PDB2PQR webserver.   
+(A PQR file is the information about the protein, whereas the IN file is a command file that tells APBS how to calculate the electrostatic fields. The In file is unique to one PQR file (as it specifies its commands to only one PQR file) and also holds other information such as dimensions and calculation specifications. Both files are needed to run APBS)  
 ![](http://i59.tinypic.com/1tlwgo.png)
 _An example of the pdb2pqr webserver and the pqr and in files_
 
-Now that the folders are set up, you can open the command line. To open up the start menu, type in cmd.exe and open the command prompt; this is the command line execution for APBS.
+4. Now that the folders are set up, you can open the command line. To open up the start menu, type in cmd.exe and open the command prompt; this is the command line execution for APBS.
+The command prompt should look something similar to this:  
+![](http://i57.tinypic.com/otf7ut.png)  
 
-The command prompt should look something similar to this:
-![](http://i57.tinypic.com/otf7ut.png)
+5. Of course, our PQR and IN files are not in this location, so we'll have to go back to our C:\ drive, then to our APBS Folder, then to our designated protein folder. To do so, in the command prompt hit "space", cd, "space", .., then enter. Your command prompt should look like the following:  
+![](http://i61.tinypic.com/mc5079.png)  
+As you can see, this makes our prompt go up one directory. To go to the C:\ drive, type in the same command, and hit "enter"  
+![](http://i59.tinypic.com/2h4hw8h.png)  
 
-Of course, our PQR and IN files are not in this location, so we'll have to go back to our C:\ drive, then to our APBS Folder, then to our designated protein folder. To do so, in the command prompt hit "space", cd, "space", .., then enter. Your command prompt should look like the following:
-
-![](http://i61.tinypic.com/mc5079.png)
-As you can see, this makes our prompt go up one directory. To go to the C:\ drive, type in the same command, and hit "enter"
-
-![](http://i59.tinypic.com/2h4hw8h.png)
-
-Now, type "space", "cd", "space", "apbs" and hit "enter". You are now in your APBS folder. To get to your folder of proteins, type in "cd", "space", then type in the first letter of your folder name and hit "tab" until your folder name pops up. Then hit "enter" 
-
-(_What the tab key does is find all files that start with the letters you have typed, for example, if you typed "i", then tab, the command prompt would go down, alphabetically, all your files in the folder that start with "i"_)
-
+6. Now, type "space", "cd", "space", "apbs" and hit "enter". You are now in your APBS folder. To get to your folder of proteins, type in "cd", "space", then type in the first letter of your folder name and hit "tab" until your folder name pops up. Then hit "enter"   
+(_What the tab key does is find all files that start with the letters you have typed, for example, if you typed "i", then tab, the command prompt would go down, alphabetically, all your files in the folder that start with "i"_)  
 ![](http://i61.tinypic.com/10mufxe.png)  
 
-Now that you are in your folder with your PQR and IN files, using the tab shortkey (as mentioned above), type the first letter of your 
-desired IN file. This is very important; apbs does not need the PQR file, it needs the IN file to operate.
-
+7. Now that you are in your folder with your PQR and IN files, using the tab shortkey (as mentioned above), type the first letter of your 
+desired IN file. This is very important; apbs does not need the PQR file, it needs the IN file to operate.  
 Once you find your IN file, hit enter and APBS will run its calculations and save a DX file (File containing electrostatic fields coordinates) in your folder. 
 
 You are done running APBS!
@@ -275,7 +254,7 @@ You are done running APBS!
 <a name="PyMol"></a>
 ######PyMol
 
-[The needed protein for the PyMol tutorial](http://www.rcsb.org/pdb/explore/explore.do?structureId=1fas) (1FAS a.k.a Fasciculin-1).  Fasciculin-1 is an acetylcholinesterase (this compound ends the communication between muscle cells) inhibitor found in the venom of the green mamba. This allows the action potential to go uncurbed which causes small involuntary muscle contractions (it paralyzes the injected subject).
+[The needed protein for this PyMol tutorial](http://www.rcsb.org/pdb/explore/explore.do?structureId=1fas) (1FAS a.k.a Fasciculin-1).  Fasciculin-1 is an acetylcholinesterase (this compound ends the communication between muscle cells) inhibitor found in the venom of the green mamba. This allows the action potential to go uncurbed which causes small involuntary muscle contractions (it paralyzes the injected subject).
 
 To set up the molecule follow the **"Introduction to PDB2PQR"** instructions above.
 
@@ -322,30 +301,27 @@ It should look something like this:
 
 14. Now you should go to the visualization tab, and hit "Show" under "Molecular surface", "Positive Isosurface", and "Negative Isosurface".  
 ![](http://i60.tinypic.com/1y7mte.jpg)  
-
-15. A visualization in the "PyMol Viewer" window should appear and look something like this:
+A visualization in the "PyMol Viewer" window should appear and look something like this:
 ![](http://i58.tinypic.com/2qsvvrs.jpg)  
 
-\*\*\* By changing the values for" Low, High, and Contour (kT/e), you can increase the range of concentrations you can see (larger values means more white space and less dark red/blue, as well as less isosurface).  
-  
-![](http://i61.tinypic.com/2hfnrwz.jpg)
+16. \*\*\* By changing the values for" Low, High, and Contour (kT/e), you can increase the range of concentrations you can see (larger values means more white space and less dark red/blue, as well as less isosurface).    
+![](http://i61.tinypic.com/2hfnrwz.jpg)  
 
-To get the changes to show you need to hit the "Update button" after changing the values.  
-![](http://i61.tinypic.com/2a5dw5k.jpg)
+17. To get the changes to show you need to hit the "Update button" after changing the values.  
+![](http://i61.tinypic.com/2a5dw5k.jpg)  
+Using values of 5, this is the picture that appears (common isovalues are 1,5,10):  
+![](http://i57.tinypic.com/33yhm9w.jpg)  
 
-Using values of 5, this is the picture that appears (common isovalues are 1,5,10): 
+18. **If a picture like this**   
+![](http://i59.tinypic.com/dophtz.jpg)  
+**or this appears,**   
+![](http://i57.tinypic.com/5fntkm.jpg)  
+**you didn't properly delete/save the water molecules which causes small highly charged areas**
 
-![](http://i57.tinypic.com/33yhm9w.jpg)
-
-**If a picture like this**  
- 
-![](http://i59.tinypic.com/dophtz.jpg) 
-
-**or this appears,** 
-
-![](http://i57.tinypic.com/5fntkm.jpg)
-
-**you didn't properly delete/save the water molecules which causes small highly charged areas**  
+19. To get field lines to appear, under the Visualization(1) tab hit "Show"  
+![](http://i60.tinypic.com/2zsmgdi.jpg)  
+The picture should look somewhat similar to this:  
+![](http://i60.tinypic.com/148jcwi.jpg)  
 
 <a name="VMD"></a>
 ######VMD
