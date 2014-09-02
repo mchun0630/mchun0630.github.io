@@ -25,9 +25,8 @@
 
 # Put in Internal LInks for the TOC
 
-
-## VMD
 <a name="vmd"></a>
+## VMD
 
 ### How to get a 3-D protein structure 
 <a name="3dprot"></a>
