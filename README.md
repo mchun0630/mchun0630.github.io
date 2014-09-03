@@ -23,7 +23,7 @@
 	* [Download Pymol](http://www.pymol.org/)
 	* [Download APBS and PDB2PQR](http://www.poissonboltzmann.org/docs/downloads/)
 	* [Download Git](http://git-scm.com/)  
-	* [Download Python](https://www.python.org/) (*Note that this is written using Python 2.7 )
+	* [Download Python](https://www.python.org/) (*Note that this is written using Python v 2.7 )
 	* [Download Matplotlib](http://matplotlib.org/)
 
 # Put in Internal LInks for the TOC
