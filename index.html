@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Mchun0630.github.io : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Mchun0630.github.io</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/mchun0630">View on GitHub</a>
+
+          <h1 id="project_title">Mchun0630.github.io</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="table-of-contents" class="anchor" href="#table-of-contents"><span class="octicon octicon-link"></span></a>Table of Contents:</h1>
+
+<ul>
+<li>
+<a href="#vmd">VMD TUTORIALS</a>
+
+<ul>
+<li><a href="#3dprot">How to get a 3-D protein structure</a></li>
+<li><a href="#ligand">How to find a Ligand</a></li>
+<li><a href="#residue">How to find a Residue</a></li>
+<li><a href="#mutate">How to Mutate a Protein</a></li>
+</ul>
+</li>
+<li>
+<a href="#PDB2PQR">PDB2PQR TUTORIALS</a>
+
+<ul>
+<li><a href="#IntroPDB">Introduction to PDB2PQR</a></li>
+<li><a href="#Download">Downloading a PDB or PQR file for Offline APBS</a></li>
+</ul>
+</li>
+<li>
+<a href="#APBS">APBS TUTORIALS</a>
+
+<ul>
+<li><a href="#IntroAPBS">Introduction to APBS</a></li>
+<li><a href="#OnlineAPBS">How to run a protein through APBS (online)</a></li>
+<li><a href="#SetupAPBS">Setting up your computer for APBS</a></li>
+<li><a href="#CMDAPBS">How to run APBS from the command line</a></li>
+<li><a href="#Dimes">Dime Value Problems</a></li>
+</ul>
+</li>
+<li>
+<a href="#APBSvis">APBS and Visualization</a>
+
+<ul>
+<li><a href="#PyMol">PyMol</a></li>
+<li><a href="#VMD">VMD</a></li>
+</ul>
+</li>
+<li>
+<a href="#">Precursor Requirements</a>
+
+<ul>
+<li><a href="http://www.ks.uiuc.edu/Research/vmd/">Download VMD</a></li>
+<li><a href="http://www.pymol.org/">Download Pymol</a></li>
+<li><a href="http://www.poissonboltzmann.org/docs/downloads/">Download APBS and PDB2PQR</a></li>
+<li>
+<a href="http://git-scm.com/">Download Git</a><br>
+</li>
+<li>
+<a href="https://www.python.org/">Download Python</a> (*Note that this is written using Python v 2.7 )</li>
+<li><a href="http://matplotlib.org/">Download Matplotlib</a></li>
+</ul>
+</li>
+</ul><h1>
+<a name="put-in-internal-links-for-the-toc" class="anchor" href="#put-in-internal-links-for-the-toc"><span class="octicon octicon-link"></span></a>Put in Internal LInks for the TOC</h1>
+
+<p><a name="vmd"></a></p>
+
+<h2>
+<a name="vmd" class="anchor" href="#vmd"><span class="octicon octicon-link"></span></a>VMD</h2>
+
+<p><a name="3dprot"></a></p>
+
+<h3>
+<a name="how-to-get-a-3-d-protein-structure" class="anchor" href="#how-to-get-a-3-d-protein-structure"><span class="octicon octicon-link"></span></a>How to get a 3-D protein structure</h3>
+
+<ol>
+<li><p>Go to desired Protein Page <a href="http://oi60.tinypic.com/2zs8xti.jpg">(pic)</a></p></li>
+<li><p>On the right hand corner, hit the "download files" option<br><img src="http://i62.tinypic.com/2iu82u0.png" alt=""></p></li>
+<li><p>Now, select desired file type. For this tutorial, the PBD File (TEXT) was selected<br><img src="http://i58.tinypic.com/wl1zxh.png" alt=""><br>
+Once you click the file, download should start immediately. Save the file in desired location.</p></li>
+<li><p>Next, open up VMD<br><img src="http://i61.tinypic.com/20kzo5v.png" alt=""></p></li>
+<li><p>Click <img src="http://i60.tinypic.com/24b7rev.png" alt="">, then click "new molecule" A Molecule File Browser will pop up as such<br><img src="http://i60.tinypic.com/210eqhf.png" alt=""></p></li>
+<li><p>Click "Browse...", and then click and open saved Protein file. 
+Go below to "Determine File Type", and click file type, which in this case, is PDB
+<img src="http://i58.tinypic.com/2gsr90g.png" alt="">
+Click the "Load" button, and your saved protein will load in the VMD window as a 3-D protein structure</p></li>
+</ol><hr><p><a name="ligand"></a></p>
+
+<h6>
+<a name="how-to-find-a-ligand" class="anchor" href="#how-to-find-a-ligand"><span class="octicon octicon-link"></span></a>How to find a Ligand</h6>
+
+<ol>
+<li><p>First, your 3-D protein structure should be loaded
+on the VMD Main window, click 
+<img src="http://i60.tinypic.com/ja9bmu.png" alt="">, and then click 
+<img src="http://i60.tinypic.com/nmzr4n.png" alt=""></p></li>
+<li><p>Next, the Graphical Representations Window will open<br><img src="http://i57.tinypic.com/2s1q9t5.png" alt=""></p></li>
+<li><p>Under 
+<img src="http://i59.tinypic.com/107uyol.png" alt="">, delete the text "all" and enter "resname (insert name of desired compound here)"</p></li>
+<li><p>Hit 
+<img src="http://i62.tinypic.com/z1ogn.png" alt="">
+and the chosen ligand will appear</p></li>
+</ol><hr><p><a name="residue"></a></p>
+
+<h6>
+<a name="how-to-find-a-residue" class="anchor" href="#how-to-find-a-residue"><span class="octicon octicon-link"></span></a>How to find a Residue</h6>
+
+<ol>
+<li><p>First, your 3-D protein structure should be loaded
+on the VMD Main window, click 
+<img src="http://i60.tinypic.com/ja9bmu.png" alt="">, and then click 
+<img src="http://i60.tinypic.com/nmzr4n.png" alt=""></p></li>
+<li><p>Next, the Graphical Representations Window will open<br><img src="http://i57.tinypic.com/2s1q9t5.png" alt=""></p></li>
+<li><p>Under <img src="http://i59.tinypic.com/107uyol.png" alt="">, delete the text "all" and enter "resid (insert residue number)" to find the desired residue number</p></li>
+<li><p>Hit <img src="http://i62.tinypic.com/z1ogn.png" alt="">and the chosen residue will appear</p></li>
+</ol><hr><p><a name="mutate"></a></p>
+
+<h6>
+<a name="how-to-mutate-a-protein" class="anchor" href="#how-to-mutate-a-protein"><span class="octicon octicon-link"></span></a>How to Mutate a Protein</h6>
+
+<ol>
+<li><p>First, one must take their pdb file (taken from pdb.org) and convert it into a psf file. This is done by hitting <img src="http://i60.tinypic.com/2jb7969.png" alt=""> in the VMD main window, then <img src="http://i62.tinypic.com/fnv5g9.png" alt="">, and finally <img src="http://i61.tinypic.com/1zezbwl.png" alt="">. You will this on your screen:<br><img src="http://i58.tinypic.com/28iuh38.png" alt="">
+*For this example, we'll use the pdb protein 1JLB.</p></li>
+<li><p>Molecule simply names the molecule you want to make into a psf file. <img src="http://i61.tinypic.com/2zeauqc.png" alt=""> is the name of your soon-to-be psf file; change it if you wish. Then hit <img src="http://i59.tinypic.com/w7eno9.png" alt=""></p></li>
+<li><p>For the next section, keep automatic settings and hit <img src="http://i58.tinypic.com/2dmf53n.png" alt=""></p></li>
+<li><p>For the next section as well, keep automatic settings and hit <img src="http://i62.tinypic.com/2pzcz0z.png" alt=""></p></li>
+<li><p>When <img src="http://i59.tinypic.com/25jyq82.png" alt=""> pops up, click "ok"</p></li>
+<li><p>If, perhaps an error window pops up:<br><img src="http://i60.tinypic.com/xcpwew.png" alt=""><br>
+simply click <img src="http://i61.tinypic.com/qsr512.png" alt=""> and the error messages will clear. However this may jeopardize the quality of the mutated protein. </p></li>
+<li><p>Click <img src="http://i61.tinypic.com/2433loy.png" alt="">, and then you will have the psf file saved in your files. </p></li>
+<li><p>Now we can go on to really mutating our residue. Hit <img src="http://i60.tinypic.com/2jb7969.png" alt=""> in the VMD main window, then <img src="http://i62.tinypic.com/fnv5g9.png" alt="">, and finally<img src="http://i59.tinypic.com/wgyycl.png" alt="">. Then, the following window will open:<br><img src="http://i60.tinypic.com/v4ov9i.png" alt=""></p></li>
+<li><p>Upload the psf and pdb files of your protein. For the field marked MUTATED, retype the name you wish your mutated file to be called.<br><img src="http://i62.tinypic.com/nx2r01.png" alt=""> refers to the original residue your target residue was<br><img src="http://i57.tinypic.com/j0emwk.png" alt=""> is the residue number<br><img src="http://i57.tinypic.com/24czm07.png" alt=""> is the amino acid of your desired mutation.<br>
+An example of the procedure, is if you wanted to change a wild type HIV-1 Reverse Transcriptase Tyrosin to Cysteine, then <img src="http://i62.tinypic.com/nx2r01.png" alt=""> would be TYR, <img src="http://i57.tinypic.com/j0emwk.png" alt=""> would be 181, and <img src="http://i57.tinypic.com/24czm07.png" alt=""> would be CYS<br>
+You do not have to check the <img src="http://i57.tinypic.com/2u9na7p.png" alt=""> in order to mutate your residue.  </p></li>
+<li><p>Finally, click <img src="http://i59.tinypic.com/11gu4ip.png" alt=""><br>
+The mutated protein will now appear in your VMD window </p></li>
+</ol><p><a name="PDB2PQR"></a></p>
+
+<h2>
+<a name="pdb2pqr" class="anchor" href="#pdb2pqr"><span class="octicon octicon-link"></span></a>PDB2PQR</h2>
+
+<p><a name="IntroPDB"></a></p>
+
+<h6>
+<a name="introduction-to-pdb2pqr" class="anchor" href="#introduction-to-pdb2pqr"><span class="octicon octicon-link"></span></a>Introduction to PDB2PQR</h6>
+
+<p><a href="http://nbcr-222.ucsd.edu/pdb2pqr_1.9.0/">Use the online pdb2pqr website to run pdb2pqr</a> (changes file from pdb to the pqr format, this adds missing hydrogens, adds some missing heavy atoms, and optimizes the protein structure among other things)</p>
+
+<p>First, go to the PDB2PQR website above. You should already have a selected protein form pdb.org in mind.
+<em>(My example will be using the protein 2HNY)</em></p>
+
+<p>Since I want my file to be compatible with VMD, for the both settings named "Pick a forcefield to use:" and "Pick an output naming scheme to use", choose the option CHARMM (PARSE works as well). </p>
+
+<ul>
+<li><p>To run with apbs, you need to change the setting in pdb2pqr to<br><em>Insert white spaces between atom name and residue name, between x and y, and between y and z</em></p></li>
+<li><p>With PDB2PQR, unfortunately the program deletes any stray ligands that are in the molecule, which means to mutate accordingly a MOL2 file must be taken (which most are available at the ZINC database website). </p></li>
+</ul><p>An interesting thing to keep in mind whilst using pdb2pqr:
+<img src="http://i60.tinypic.com/1zn0gm8.jpg" alt=""></p>
+
+<p><a name="Download"></a></p>
+
+<h6>
+<a name="downloading-a-pdb-or-pqr-file-for-offline-apbs" class="anchor" href="#downloading-a-pdb-or-pqr-file-for-offline-apbs"><span class="octicon octicon-link"></span></a>Downloading a PDB or PQR file for Offline APBS</h6>
+
+<ol>
+<li><p>After running PDB2PQR from the website, click on the file under "Input Files" labeled something like "14084693082.pdb" (the number will be different but it will have a .pdb ending). This should start a download<br><img src="http://i58.tinypic.com/30m65gk.jpg" alt=""><br><strong>*(It is useful to rename the file to 1FAS.pdb because it gets confusing when you have many different strings of numbers for different proteins)</strong></p></li>
+<li><p>If the link didn't download, right click on this link and click "Save link as..." and save the file where you want to be able to find it.<br><img src="http://i58.tinypic.com/2vlof7t.jpg" alt=""><br><strong>*(You should rename this file too)</strong></p></li>
+<li><p>Now you should download the same numbered file under "Output files" (mine is called 1408469302.pqr). This time you cannot click on it (as it will just bring up the a webpage with all the information in the file. You must right click and "Save link as..." this time. Also make sure the downloaded file ends in a .pqr but once again the number will not be the same as the one in this picture.<br><img src="http://i59.tinypic.com/uosr9.jpg" alt=""></p></li>
+</ol><p><a name="APBS"></a></p>
+
+<h2>
+<a name="apbs" class="anchor" href="#apbs"><span class="octicon octicon-link"></span></a>APBS</h2>
+
+<p><a name="IntroAPBS"></a></p>
+
+<h6>
+<a name="introduction-to-apbs" class="anchor" href="#introduction-to-apbs"><span class="octicon octicon-link"></span></a>Introduction to APBS</h6>
+
+<p>APBS is a useful tool to find the electrostatic field of a protein. Certain components need to be in place for APBS to work including <em>white spaces must be in place</em>  </p>
+
+<p><a name="OnlineAPBS"></a></p>
+
+<h6>
+<a name="how-to-run-a-protein-through-apbs-online" class="anchor" href="#how-to-run-a-protein-through-apbs-online"><span class="octicon octicon-link"></span></a>How to run a protein through APBS (online)</h6>
+
+<p>The steps follow the same steps in making a PDB2PQR protein model structure, except for a small difference. </p>
+
+<ol>
+<li><p>When making the PDB2PQR, check the option for allowing the program to have an APBS option, and in addition adding the insert white space link in the options, like so: 
+<img src="http://i61.tinypic.com/117z95c.png" alt=""></p></li>
+<li><p>Then, click submit, and it will take you to the page for the PDB2PQR runned protein. On the bottom of the page, click <img src="http://i61.tinypic.com/sdem35.jpg" alt=""> and wait until APBS is done running.  </p></li>
+<li><p>Then download the .dx.gz file, and that is the end of your APBS session.</p></li>
+</ol><p>* Note: Unzipping the .dx.gz file can be done using any unzipping program </p>
+
+<p><a name="SetupAPBS"></a></p>
+
+<h6>
+<a name="setting-up-your-computer-for-apbs" class="anchor" href="#setting-up-your-computer-for-apbs"><span class="octicon octicon-link"></span></a>Setting up your computer for APBS</h6>
+
+<p>*DISCLAIMER: THIS IS FOR WINDOWS USERS ONLY (?)</p>
+
+<p>In order to run APBS using command line, you will need to first download the APBS binary from <a href="http://sourceforge.net/projects/apbs/">http://sourceforge.net/projects/apbs/</a> as well as download the newest python version 2 release (<a href="https://www.python.org/download/releases/2.7.2/">https://www.python.org/download/releases/2.7.2/</a>  as of 8/8/2014). </p>
+
+<p>Why use the command line? It gives the user much more power over executable functions, immediately unzips the file, and is quite simple to use. </p>
+
+<ol>
+<li><p>First, in order to run APBS at all, you need to make a directory connecting APBS to the command line. 
+To do so, go to the start menu, and right click on 'computer' The following should open:<br><img src="http://i57.tinypic.com/qyy24i.png" alt=""></p></li>
+<li><p>Click on properties, and the following should open:<br><img src="http://i62.tinypic.com/raro1z.png" alt=""></p></li>
+<li><p>Click on 'Advanced System Settings' ; the computer will ask you if you want to change settings. Click yes, and then the system properties window will open.<br><img src="http://i61.tinypic.com/2ed7h8m.png" alt=""></p></li>
+<li><p>Click 
+<img src="http://i62.tinypic.com/4k9nci.png" alt="">, and another window will pop up.<br><img src="http://i62.tinypic.com/i5bsdd.png" alt=""></p></li>
+<li><p>This is where you'll write your path. Click on the 
+<img src="http://i62.tinypic.com/3167m0l.png" alt=""> to create a new path.  </p></li>
+<li><p>TO make the directory, simply copy and paste<br><strong>C:\Python27\;C:\Python27\Scripts;C:\Util\pdb2pqr-windows-bin-1.9.0;C:\apbs\bin</strong><br>
+and click ok. </p></li>
+</ol><p>You can now run APBS!</p>
+
+<p><a name="CMDAPBS"></a></p>
+
+<h6>
+<a name="how-to-run-apbs-from-the-command-line" class="anchor" href="#how-to-run-apbs-from-the-command-line"><span class="octicon octicon-link"></span></a>How to run APBS from the command line</h6>
+
+<h4>
+<a name="discalimer-this-tutorial-is-using-a-windows-computer-and-windows-command-prompt" class="anchor" href="#discalimer-this-tutorial-is-using-a-windows-computer-and-windows-command-prompt"><span class="octicon octicon-link"></span></a>DISCALIMER: THIS TUTORIAL IS USING A WINDOWS COMPUTER AND WINDOWS COMMAND PROMPT</h4>
+
+<ol>
+<li><p>First, before running APBS through the command line, you must make sure your desired protein files are in the same folder as the apbs command prompt. If APBS downloaded correctly, it should be in your C drive (<img src="http://i57.tinypic.com/k2ih3r.png" alt="">) when you open "computer" from your start menu. </p></li>
+<li><p>Click on the APBS folder, and in the APBS folder make a new folder for all your proteins; please label the folder accordingly, and remember the name of the folder. </p></li>
+<li><p>It is important to remember, that when putting protein files in the folder, you need to put both the PQR as well as the corresponding IN file. PQR and IN files can both be obtained from the PDB2PQR webserver.<br>
+(A PQR file is the information about the protein, whereas the IN file is a command file that tells APBS how to calculate the electrostatic fields. The In file is unique to one PQR file (as it specifies its commands to only one PQR file) and also holds other information such as dimensions and calculation specifications. Both files are needed to run APBS)<br><img src="http://i59.tinypic.com/1tlwgo.png" alt=""><em>An example of the pdb2pqr webserver and the pqr and in files</em></p></li>
+<li><p>Now that the folders are set up, you can open the command line. To open up the start menu, type in cmd.exe and open the command prompt; this is the command line execution for APBS.
+The command prompt should look something similar to this:<br><img src="http://i57.tinypic.com/otf7ut.png" alt=""></p></li>
+<li><p>Of course, our PQR and IN files are not in this location, so we'll have to go back to our C:\ drive, then to our APBS Folder, then to our designated protein folder. To do so, in the command prompt hit "space", cd, "space", .., then enter. Your command prompt should look like the following:<br><img src="http://i61.tinypic.com/mc5079.png" alt=""><br>
+As you can see, this makes our prompt go up one directory. To go to the C:\ drive, type in the same command, and hit "enter"<br><img src="http://i59.tinypic.com/2h4hw8h.png" alt=""></p></li>
+<li><p>Now, type "space", "cd", "space", "apbs" and hit "enter". You are now in your APBS folder. To get to your folder of proteins, type in "cd", "space", then type in the first letter of your folder name and hit "tab" until your folder name pops up. Then hit "enter"<br>
+(<em>What the tab key does is find all files that start with the letters you have typed, for example, if you typed "i", then tab, the command prompt would go down, alphabetically, all your files in the folder that start with "i"</em>)<br><img src="http://i61.tinypic.com/10mufxe.png" alt=""></p></li>
+<li><p>Now that you are in your folder with your PQR and IN files, using the tab shortkey (as mentioned above), type the first letter of your 
+desired IN file. This is very important; apbs does not need the PQR file, it needs the IN file to operate.<br>
+Once you find your IN file, hit enter and APBS will run its calculations and save a DX file (File containing electrostatic fields coordinates) in your folder. </p></li>
+</ol><p>You are done running APBS!</p>
+
+<p><a name="APBSvis"></a></p>
+
+<h2>
+<a name="apbs-and-visualization" class="anchor" href="#apbs-and-visualization"><span class="octicon octicon-link"></span></a>APBS and Visualization</h2>
+
+<p><a name="PyMol"></a></p>
+
+<h6>
+<a name="pymol" class="anchor" href="#pymol"><span class="octicon octicon-link"></span></a>PyMol</h6>
+
+<p><a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=1fas">The needed protein for this PyMol tutorial</a> (1FAS a.k.a Fasciculin-1).  Fasciculin-1 is an acetylcholinesterase (this compound ends the communication between muscle cells) inhibitor found in the venom of the green mamba. This allows the action potential to go uncurbed which causes small involuntary muscle contractions (it paralyzes the injected subject).</p>
+
+<p>To set up the molecule follow the <strong>"Introduction to PDB2PQR"</strong> instructions above.</p>
+
+<ol>
+<li><p>Open the PQR file you are going to be using so you can edit it, and go down to where all the <strong>"HETATM"</strong> are (these should all be HOH which is water). Select them all and delete them. Save the file.<br><img src="http://i60.tinypic.com/9g9bva.jpg" alt="">
+It should look something like this:<br><img src="http://i59.tinypic.com/t87via.jpg" alt=""></p></li>
+<li><p>Load the newly saved PQR file you had into PyMOL (File → Open...) and choose your favorite graphical representation of the molecular structure (often the easiest to view is "showing (<strong>S</strong>)" the cartoon representation and "hiding (<strong>H</strong>)" lines). A 
+<img src="http://i58.tinypic.com/o8w3s5.jpg" alt=""></p></li>
+<li><p>Next go to the Plugin tab and open APBS Tools... (where ... is a number referring to the  version). In the window that comes up, click "Use another PQR" and then "Choose Externally Generated PQR:".<br><img src="http://i60.tinypic.com/14sgjkj.jpg" alt=""></p></li>
+<li><p>Now find the file that you created using the webserver and click ok.<br><img src="http://i60.tinypic.com/2z84xtj.jpg" alt=""></p></li>
+<li><p>Go into "My Computer" and in the upper right corner and type in apbs.exe and press enter (to search for it).<br><img src="http://i57.tinypic.com/30nj3wj.jpg" alt=""></p></li>
+<li><p>Once you find the file, left click on it once to select it, then right click and go to open file location.<br><img src="http://i61.tinypic.com/14xyukp.jpg" alt=""></p></li>
+<li><p>Click on the white space in the top of window.<br><img src="http://i59.tinypic.com/2zjls7t.jpg" alt=""></p></li>
+<li><p>When the path is highlighted blue, Right click on it,<br><img src="http://i62.tinypic.com/2l8kv2e.jpg" alt=""></p></li>
+<li><p>And hit Copy (to copy the file path).<br><img src="http://i59.tinypic.com/2l93528.jpg" alt=""></p></li>
+<li><p>Paste this link into the "APBS binary location" on the "Program Locations" tab of "PyMol APBS Tools".<br><img src="http://i57.tinypic.com/2u5gjt1.jpg" alt=""></p></li>
+<li><p>Now add "<strong>\apbs.exe</strong>" after "\bin" in order to finish off the path to the APBS executable. If the path to an apbs.exe executable is correct, the line should no longer be highlighted red.<br><img src="http://i62.tinypic.com/2v0ogv6.jpg" alt=""></p></li>
+<li><p>Now repeat steps 4 through 10 but with <strong>psize.py</strong> and <strong>pdb2pqr.exe</strong> (if they are not already in place). The end product should look like this:<br><img src="http://i62.tinypic.com/huj313.jpg" alt=""></p></li>
+<li><p>Now hit "Set grid", and "Run APBS".<br><img src="http://i58.tinypic.com/30uzqwx.jpg" alt=""></p></li>
+<li><p>Now you should go to the visualization tab, and hit "Show" under "Molecular surface", "Positive Isosurface", and "Negative Isosurface".<br><img src="http://i60.tinypic.com/1y7mte.jpg" alt=""><br>
+A visualization in the "PyMol Viewer" window should appear and look something like this:
+<img src="http://i58.tinypic.com/2qsvvrs.jpg" alt=""></p></li>
+<li><p>*** By changing the values for" Low, High, and Contour (kT/e), you can increase the range of concentrations you can see (larger values means more white space and less dark red/blue, as well as less isosurface).<br><img src="http://i61.tinypic.com/2hfnrwz.jpg" alt=""></p></li>
+<li><p>To get the changes to show you need to hit the "Update button" after changing the values.<br><img src="http://i61.tinypic.com/2a5dw5k.jpg" alt=""><br>
+Using values of 5, this is the picture that appears (common isovalues are 1,5,10):<br><img src="http://i57.tinypic.com/33yhm9w.jpg" alt=""></p></li>
+<li><p><strong>If a picture like this</strong><br><img src="http://i59.tinypic.com/dophtz.jpg" alt=""><br><strong>or this appears,</strong><br><img src="http://i57.tinypic.com/5fntkm.jpg" alt=""><br><strong>you didn't properly delete/save the water molecules which causes small highly charged areas</strong></p></li>
+<li><p>To get field lines to appear, under the Visualization(1) tab hit "Show"<br><img src="http://i60.tinypic.com/2zsmgdi.jpg" alt=""><br>
+The picture should look somewhat similar to this:<br><img src="http://i60.tinypic.com/148jcwi.jpg" alt=""></p></li>
+</ol><p><a name="VMD"></a></p>
+
+<h6>
+<a name="vmd-1" class="anchor" href="#vmd-1"><span class="octicon octicon-link"></span></a>VMD</h6>
+
+<p><a href="http://www.rcsb.org/pdb/explore/explore.do?pdbId=1MYK">The needed protein for this VMD tutorial</a> (1MYK a.k.a Hyperstable Arc Repressor Mutant PL8). An arc repressor is a small protein that acts as a transcription factor. This is a mutant that has the Proline-8 (in location 8) replaced by a Leucine. This creates enhanced stability due to an extra hydrogen bond, but also decreases the affinity of the molecule to bind to DNA.</p>
+
+<p>In order to set up the molecule, follow the same instructions as <strong>"Introduction to PDB2PQR"</strong> but replace the shown molecule with 1MYK.</p>
+
+<ol>
+<li><p>Open the downloaded PQR file and go to the bottom where the "HETATMs" are listed. There should be the 3 parts of a water molecule (labeled HOH). Delete these.
+<img src="http://i58.tinypic.com/28cikk5.jpg" alt="">
+You should end up with the following:
+<img src="http://i62.tinypic.com/10xyjqu.jpg" alt=""></p></li>
+<li><p>Open up VMD, and under the <strong>VMD Main</strong> tab, click "File" -&gt; "New Molecule".<br><img src="http://i62.tinypic.com/i6bcb5.jpg" alt=""></p></li>
+<li><p>Under "Molecule File Browser",<br><img src="http://i61.tinypic.com/2h32dlv.jpg" alt=""><br>
+Hit <img src="http://i58.tinypic.com/2yn07cj.jpg" alt=""><br>
+Open the "<strong>1MYK.pqr</strong>" file and hit Load (make sure the file type under "Determine file type:" is correct after hitting load, it should be PQR)<br><img src="http://i61.tinypic.com/rmjma0.jpg" alt=""></p></li>
+<li><p>Under "Extensions", select "Analysis" and "APBS Electrostatics"<br><img src="http://i62.tinypic.com/2dahu69.jpg" alt=""></p></li>
+<li><p>Under "APBS Tools" click "Edit" and then "Settings"<br><img src="http://i60.tinypic.com/11l4w0h.jpg" alt=""></p></li>
+<li><p>Under the APBS Tools "Settings" tab, hit Browse under "APBS Location". Input the location to an apbs.exe (apbs executable).<br><img src="http://i58.tinypic.com/24wax4k.jpg" alt=""></p></li>
+<li><p>Click on "Computer" on the left sidebar and in the top right corner type "apbs.exe" and hit enter to search for apbs.exe.<br><img src="http://i61.tinypic.com/2wq7l91.jpg" alt=""></p></li>
+<li><p>Click on one of the "apbs.exe", right click and go down to "Open file location"<br><img src="http://i60.tinypic.com/s2r88o.jpg" alt=""></p></li>
+<li><p>Click on the "apbs.exe" and click "Open".<br><img src="http://i59.tinypic.com/108gzsh.jpg" alt=""></p></li>
+<li><p>For "Working Directory" browse over to the file that contains the PQR file (1MYK.pqr) you downloaded and saved previously. Hit "Ok" once you found the file.<br><img src="http://i61.tinypic.com/28assk3.jpg" alt=""></p></li>
+<li><p>Click OK on the "Settings" page<br><img src="http://i58.tinypic.com/2k4y6w.jpg" alt=""></p></li>
+<li><p>Click on the "0" and hit "Edit".<br><img src="http://i57.tinypic.com/ztcj8y.jpg" alt=""></p></li>
+<li><p>If you need to change the APBS settings you would do it on this page; however, the defaults are usually fine except for the most highly charged molecules (Elec stands for electrostatics). Hit Ok when you are done.<br><img src="http://i61.tinypic.com/f2sbpx.jpg" alt=""></p></li>
+<li><p>Now hit "Run APBS". In the "APBSRun: Load APBS Maps" window click "Load files into top molecule" and click "Ok"<br><img src="http://i59.tinypic.com/fbm075.jpg" alt=""></p></li>
+<li><p>Under the "VMD Main" tab, go to "Graphics" and hit "Representations".<br><img src="http://i61.tinypic.com/15noh76.jpg" alt=""></p></li>
+<li><p>Select the current "rep" and under "Drawing Method" select "NewCartoon". Under "Coloring Method" select "ResType (colors based on type of residue: non-polar, basic, acidic, polar are white, blue, red, and green respectively)"<br><img src="http://i57.tinypic.com/6pqion.jpg" alt=""><br>
+The current picture should look something like this:<br><img src="http://i61.tinypic.com/rihpav.jpg" alt=""></p></li>
+<li><p>Now hit "Create rep" and select the new rep.<br><img src="http://i61.tinypic.com/35idl75.jpg" alt=""><br>
+Change the "Coloring Method" of this one to "ColorID" (the value of this should be 0).<br><img src="http://i60.tinypic.com/2is7a08.jpg" alt=""><br>
+Now change the "Drawing Method" to "Isosurface". Change the material to "Transparent", the "Draw" to "Solid Surface", and the "Isovalue" to 1.<br><img src="http://i59.tinypic.com/2vv9y4o.jpg" alt=""></p></li>
+<li><p>Repeat step 17 but with a ColorID of 1 and an Isovalue of -1 (red for a negative charge is standard because oxygen is typically modeled as red while blue is standard for a positive charge because nitrogen is modeled as blue). The display window should now look something like this:<br><img src="http://i61.tinypic.com/25unwup.jpg" alt=""></p></li>
+<li><p>If you want to visualize surface potentials (instead of isosurfaces), under the "Graphical Representations" window change the coloring method for both reps that are "Isosurface" under the "Style" title to "Surf".<br><img src="http://i57.tinypic.com/2lc3gpv.jpg" alt=""></p></li>
+<li><p>Also change the "Coloring Method" to "Volume" and the Material to "Opaque" for both reps.<br><img src="http://i61.tinypic.com/2mfg60m.jpg" alt=""></p></li>
+<li><p>Under the "Trajectory" tab<br><img src="http://i59.tinypic.com/1z3nszs.jpg" alt=""><br>
+Change the "Color Scale Data Range:" values to -10 and 10 and hit set (do this for both Surf reps).<br><img src="http://i58.tinypic.com/a80y.jpg" alt=""></p></li>
+<li><p>Now the display should have a solid red/blue/white surface that looks like this:<br><img src="http://i60.tinypic.com/24fgt2s.jpg" alt=""></p></li>
+<li><p>By keeping the "Coloring Method" as "Volume", but changing the "Drawing Method" to "FieldLines" you can visualize the local intensity of electric fields.<br><img src="http://i61.tinypic.com/1zzozna.jpg" alt=""></p></li>
+<li><p>Change the "Size" to 2, "GradientMag" to approximately 8.30, "Min Length" to 1.00, and "Max Length" is approximately 200.<br><img src="http://i58.tinypic.com/t0n9z8.jpg" alt=""></p></li>
+<li><p>The final representation should now look like the following:<br><img src="http://i59.tinypic.com/vdh447.jpg" alt=""></p></li>
+</ol><p><a name="Dimes"></a></p>
+
+<h2>
+<a name="dime-value-problems" class="anchor" href="#dime-value-problems"><span class="octicon octicon-link"></span></a>DIME VALUE PROBLEMS</h2>
+
+<p>When running APBS, DIME values may become a problem that keeps apbs electrostatic calculations from running. In order to check DIME values, you need to check the .in file for DIME values. One can change the DIME values of an APBS file by going through a text editor and manually changing the dime values. </p>
+
+<p><img src="http://i58.tinypic.com/6eepsl.png" alt=""></p>
+
+<p>The picture above shows a sample .in file, which can be obtained after running PDB2PQR on the desired protein. </p>
+
+<p>Dime values are the dimensions for the XYZ grid for the protein. Each  grid point requires about 160B of memory, and to get the total number if grid points the x,y,z grid elements are multiplied. The multi-grid solver iterates over all of these elements to find the electrostatic potential at each of those locations. If the dimensions are too large, the computer will have a memory problem and will be unable to calculate the electrostatic fields, such as:</p>
+
+<p><img src="http://i59.tinypic.com/2v16loz.png" alt=""></p>
+
+<p>In order to work around this issue, you must manually change the DIME values to a smaller size. For the HIV-1 RT, I changed the DIME values to 129, which allowed APBS to run as normal and calculate a .dx file. </p>
+
+<p>Choosing the appropriate DIME value will fix the memory problems that may occur. The reason problems with DIME values may be too big is when PDB2PQR calculates the input file, it measures DIME values based on the size of the protein. For example,with HIV-1, it is protein with 2 chains of 400+ residues, and so the DIME values are unnecessarily large. </p>
+
+<p>To expand on DIME values, since a computer only knows about 1s and 0s convention is used to encode and decode values to the bits and bytes in memory; this is often called a type system.  An 8 bit byte has eight slots for a bit (1 or 0); therefore, if you are only considering positive numbers, it may hold a value between 0 (00000000) and 2^8 – 1  (11111111) which is 255 (though 2^8 is 256, and we have to subtract one because '0' takes up a slot).</p>
+
+<p>To represent negative numbers, APBS uses the two's compliment encoding. This means if the left-most bit is a 1, then the number is negative, and so we invert the bits (change 0's to 1's and 1's to 0's), add 1, and read the value.  As an example, below is a table that shows the values of  just four bits (a nibble) that are decoded as unsigned and signed (using two's compliment) integers:</p>
+
+<p>0000 = 0  :  0
+0001 = 1  :  1
+0010 = 2  :  2
+0011 = 3  :  3
+1101 = 13 : -3
+1110 = 14 : -2
+1111 = 15 : -1 </p>
+
+<p>The problem is that APBS used a signed integer in the 1.4 release to store the total number of elements.  If the total got bigger than 2^(n-1) - 1, where n is the width of the integer (in our case a 32 bit wide int so 2^(n-1) = 2,147,483,648) then the number "overflowed" and looked like a negative number.  </p>
+
+<p>In the new APBS release, this was fixed by using an unsigned type that is as big as the machine can support, generally a 64 bit number.</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Two's_complement">For extra information click HERE</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
